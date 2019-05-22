@@ -18,3 +18,4 @@ export class ProfileModule implements NestModule{
         consumer.apply(AuthMiddleware).forRoutes({path: 'profiles/:username/follow', method: RequestMethod.ALL});
     }
 }
+
